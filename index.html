@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunza Shahzadi | Data Scientist</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="loader-panel panel-top"></div>
+        <div class="loader-content">
+            <div class="counter">0%</div>
+        </div>
+        <div class="loader-panel panel-bottom"></div>
+    </div>
+
+    <div class="cursor"></div>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="close-menu" onclick="toggleMenu()"><i class="ri-close-line"></i></div>
+        <a href="#home" class="menu-link" onclick="toggleMenu()">Home</a>
+        <a href="#about" class="menu-link" onclick="toggleMenu()">Profile</a>
+        <a href="#skills" class="menu-link" onclick="toggleMenu()">Expertise</a>
+                <a href="#education" class="menu-link" onclick="toggleMenu()">Education</a>
+
+        <a href="#work" class="menu-link" onclick="toggleMenu()">Work</a>
+        <a href="#contact" class="menu-link" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <header id="home">
+        <nav>
+            <a href="#"><span>Hunza</span> Shahzadi</a>
+            <div class="menu-trigger" onclick="toggleMenu()">MENU +</div>
+        </nav>
+        
+        <div class="hero-content" id="heroContainer">
+            <div class="tilt-wrapper">
+                <h1 class="big-text reveal-hero">Data</h1>
+                <br>
+                <h1 class="big-text right-align reveal-hero">
+                    <span class="outline-text">Scien</span>tist</h1>
+            </div>
+            <div class="hero-meta">
+                <div>Based in Karachi</div>
+                <a href="#skills" class="scroll-link">View My skills <i class="ri-arrow-down-line"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <div class="sec-header"><h2 class="reveal-text">01. Profile</h2><span>Who I Am</span></div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p class="reveal-text">I'm a Data Scientist with a strong focus on analytical problem-solving and machine learning. I work end-to-end across the data pipeline — from cleaning and exploring data to building predictive models and creating meaningful visualizations. I enjoy uncovering patterns, simplifying complex information, and turning insights into actionable, real-world impact. My goal is always to combine solid technical skills with clear communication and a practical approach to solving business challenges.</p>
+            </div>
+            <div class="about-img-container">
+                <div class="about-3d-card">
+                    <img src="abt-me-photo.avif" alt="Avatar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <div class="sec-header"><h2 class="reveal-text">02. Expertise</h2><span>Tech Stack</span></div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="skill-info"> <span>C</span><span>95%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="95%"></div>
+                </div>
+            </div>
+             <div class="skill-item">
+                <div class="skill-info"> <span>C++</span><span>85%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="85%"></div>
+             </div></div>
+            <div class="skill-item">
+                <div class="skill-info"> <span>HTML</span><span>95%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="95%"></div>
+             </div></div>
+             <div class="skill-item">
+                <div class="skill-info"> <span>CSS</span><span>95%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="95%"></div>
+             </div></div>
+             <div class="skill-item">
+                <div class="skill-info"> <span>JS</span><span>90%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="90%"></div>
+             </div></div>
+             <div class="skill-item">
+                <div class="skill-info"> <span>MS SUITE</span><span>80%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="80%"></div>
+             </div></div>
+             <div class="skill-item">
+                <div class="skill-info"> <span>LATEX</span><span>60%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="60%"></div>
+             </div></div>
+             <div class="skill-item">
+                <div class="skill-info"> <span>Python</span><span>58%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="58%"></div>
+             </div></div>
+             <div class="skill-item">
+                <div class="skill-info"> <span>GSAP</span><span>70%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="70%"></div>
+             </div></div>
+             <div class="skill-item">
+                <div class="skill-info"> <span>My SQL</span><span>60%</span></div>
+                <div class="progress-bg"><div class="progress-fill" data-width="60%"></div>
+             </div></div>
+        </div>
+    </section>
+
+    <section class="section" id="work">
+        <div class="sec-header"><h2 class="reveal-text">03. Work</h2><span>Roles</span></div>
+        <div class="hover-reveal"><img class="reveal-img" src="" alt="Preview"></div>
+        <div class="exp-list">
+            <div class="exp-row" data-img="exp-img-1.avif">
+                <div class="role reveal-text">Lead Analyst</div>
+                <div class="company">TechFlow</div>
+                <div class="work-btn-container"><a href="#" class="work-btn">View Project</a></div>
+                <div class="year">2030 - Present</div>
+            </div>
+            <div class="exp-row" data-img="exp-img-2.avif">
+                <div class="role reveal-text">ML Engineer</div>
+                <div class="company">CyberMind</div>
+                <div class="work-btn-container"><a href="#" class="work-btn">View Project</a></div>
+                <div class="year">2027 - 2029</div>
+            </div>
+            <div class="exp-row" data-img="exp-img-3.avif">
+                <div class="role reveal-text">Data Intern</div>
+                <div class="company">Global Finance</div>
+                <div class="work-btn-container"><a href="#" class="work-btn">View Project</a></div>
+                <div class="year">2025 - 2027</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="education">
+        <div class="sec-header"><h2 class="reveal-text">04. Academic</h2><span>Education</span></div>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <div><span class="edu-year">2025 - 2029</span>
+                <h3 class="edu-degree">BSc Data Science</h3>
+                <div class="institue">NU-FAST</div>
+                 </div><i class="ri-graduation-cap-fill edu-bg-icon"></i>
+            </div>
+            <div class="edu-card">
+                <div><span class="edu-year">2023-2025</span>
+                <h3 class="edu-degree">Pre-Engineering</h3>
+                <div class="institue">GDC Malir Cantt</div>
+                </div><i class="ri-award-fill edu-bg-icon"></i></div>
+            <div class="edu-card">
+                <div><span class="edu-year">2021-2023</span>
+                <h3 class="edu-degree">Matriculation</h3>
+                <div class="institue">Education Trust Nasra School</div>
+                </div><i class="ri-book-mark-fill edu-bg-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <p style="color: var(--dim-text); margin-bottom: 50px;" class="reveal-text">READY TO START?</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hunzashahzadi462@gmail.com" target="_blank" class="magnetic-btn">Let's Talk</a>
+        
+        <footer>
+            <span>&copy; 2025 Hunza Shahzadi</span>
+            <div class="socials">
+                <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://github.com/hunzashahzadi23" class="social-link"><i class="ri-github-fill"></i></a>
+                <a href="https://www.instagram.com/__.hunza/" class="social-link"><i class="ri-instagram-line"></i></a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

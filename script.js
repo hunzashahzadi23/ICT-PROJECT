@@ -1,6 +1,20 @@
 //loader scrreen animation:
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Check if mobile (screen width < 768px)
+    if (window.innerWidth < 768) {
+        // Hide preloader immediately
+        const preloader = document.querySelector('.preloader');
+        if (preloader) preloader.style.display = 'none';
+        
+        // Ensure scrolling is enabled
+        document.body.classList.remove("no-scroll");
+        
+        // Start animations immediately without delay
+        initAnimations();
+        return; // Exit the function so the loader logic below doesn't run
+    }
+
     const counterEl = document.querySelector('.counter');
     document.body.classList.add("no-scroll");
     let count = 0;

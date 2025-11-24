@@ -536,10 +536,33 @@ footer {
 
 /* Mobile */
 @media(max-width: 768px) {
+    /* Responsive Layout Fixes */
+    nav { padding: 20px; }
+    
     .about-grid { grid-template-columns: 1fr; }
+    
+    .hero-content { margin-top: 5vh; }
     .big-text { font-size: 15vw; }
-    .exp-row { grid-template-columns: 1fr 1fr; gap: 10px; }
+    
+    .section { padding: 80px 5vw; }
+    .sec-header { flex-direction: column; gap: 10px; margin-bottom: 40px; }
+    .sec-header h2 { font-size: 2.5rem; }
+    
+    .about-text p { font-size: 1.2rem; }
+    .about-img-container { height: 300px; margin-top: 30px; }
+    
+    .skills-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    
+    .exp-row { grid-template-columns: 1fr; gap: 10px; text-align: left; }
+    .role { font-size: 1.8rem; }
     .exp-row .work-btn-container, .exp-row .company { display: none; } /* Simplify on mobile */
+    .year { text-align: left; font-size: 0.9rem; color: var(--dim-text); }
+    
     .hover-reveal, .cursor { display: none; } 
     .preloader { display: none; }
+    
+    .contact { padding: 80px 5vw; }
+    .magnetic-btn { width: 150px; height: 150px; line-height: 150px; font-size: 1rem; }
+    
+    footer { flex-direction: column; gap: 20px; text-align: center; }
 }
